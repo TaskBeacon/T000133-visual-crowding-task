@@ -1,0 +1,499 @@
+subinfo_fields:
+- name: subject_id
+  type: int
+  constraints:
+    min: 101
+    max: 999
+    digits: 3
+subinfo_mapping:
+  subject_id: 被试编号（3位数字）
+  screen_width_cm: 实测屏幕可见宽度（厘米，不是EDID值）
+  screen_height_cm: 实测屏幕可见高度（厘米）
+  viewing_distance_cm: 实测眼睛至屏幕距离（厘米）
+  measurement_date: 测量日期
+  measurement_method: 测量工具与方法
+  measurement_ack: 确认实际测量
+  not_measured: 未实测：禁止研究运行
+  measured: 已使用尺具实际测量
+  Participant Information: 实验登记与实测几何
+  registration_failed: 登记失败
+  registration_successful: 登记成功
+  invalid_input: '{field} 输入无效'
+window:
+  size:
+  - 1280
+  - 800
+  units: pix
+  screen: 0
+  bg_color: white
+  fullscreen: false
+task:
+  task_name: Visual Crowding Task
+  language: Chinese
+  voice_enabled: false
+  voice_name: zh-CN-YunyangNeural
+  save_path: ./outputs/human
+  total_blocks: 1
+  total_trials: 20
+  trial_per_block: 20
+  conditions:
+  - unflanked
+  - spacing_025
+  - spacing_040
+  - spacing_055
+  - spacing_075
+  condition_weights: null
+  eccentricities_deg:
+  - 3
+  - 6
+  spacing_ratios:
+    unflanked: null
+    spacing_025: 0.25
+    spacing_040: 0.4
+    spacing_055: 0.55
+    spacing_075: 0.75
+  alphabet: abcdefghijklmnopqrstuvwyz
+  xheight_deg: 0.5
+  continue_key: space
+  fixation_break_key: f8
+  key_list:
+  - a
+  - b
+  - c
+  - d
+  - e
+  - f
+  - g
+  - h
+  - i
+  - j
+  - k
+  - l
+  - m
+  - n
+  - o
+  - p
+  - q
+  - r
+  - s
+  - t
+  - u
+  - v
+  - w
+  - y
+  - z
+  - f8
+  - space
+  overall_seed: 133031
+  seed_mode: same_across_sub
+  diagnostic: true
+  hide_cursor: true
+  delta: 0
+  calibration:
+    screen_width_cm: 40
+    screen_height_cm: 25
+    viewing_distance_cm: 60
+    measurement_date: synthetic
+    measurement_method: synthetic_fixture_not_measured
+    measurement_ack: not_measured
+    provenance: synthetic_geometry
+timing:
+  fixation_duration: 0.6
+  array_duration: 0.2
+  report_duration: 4.0
+  intertrial_duration: 0.3
+stimuli:
+  instruction:
+    type: text
+    font: SimHei
+    text: '软件验证：使用合成几何，不是实测屏幕或被试数据。
+
+      本次20次，保留正式试次时序和所有空间条件。
+
+
+      视觉拥挤任务
+
+
+      请保持头部位置，双眼始终注视屏幕中央黑方块。
+
+      不要看向外周字母；字母会短暂出现在左边或右边。
+
+      有时只有一个字母，有时两侧各有一个 x。
+
+      记住中间目标字母，不要报告两侧的 x。
+
+
+      字母消失、提示出现后，按对应英文字母键作答。
+
+      请使用英文输入法；目标不会是 x。每次最多4秒。
+
+      如果刚才发现自己看向了目标或离开中央注视，请按F8。
+
+      F8仅记录你的报告，系统没有眼动仪，不能核实注视。
+
+
+      每100次可以休息。本任务不提供临床判断或视觉常模。
+
+      准备好后按空格。'
+    color: black
+    height: 22
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 0
+    units: pix
+  fixation:
+    type: rect
+    units: pix
+    width: 6
+    height: 6
+    fillColor: black
+    lineColor: black
+    lineWidth: 0
+    pos:
+    - 0
+    - 0
+  report_prompt:
+    type: text
+    font: SimHei
+    text: 请报告刚才的目标字母；发现注视偏离请按F8。
+    color: black
+    height: 24
+    wrapWidth: 1100
+    pos:
+    - 0
+    - -150
+    units: pix
+  block_break:
+    type: text
+    font: SimHei
+    text: '本组完成，可以休息。
+
+
+      继续前请恢复原来的头部位置和眼屏距离。
+
+      始终看中央方块，不要追看外周字母。
+
+      按空格继续。'
+    color: black
+    height: 24
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 0
+    units: pix
+  good_bye:
+    type: text
+    font: SimHei
+    text: '任务完成，谢谢参与。
+
+
+      系统没有核实注视，也没有验证实际屏幕标定。
+
+      本任务不自动估计临界间距，不提供视力或临床常模。
+
+      按空格保存并结束。'
+    color: black
+    height: 24
+    wrapWidth: 1100
+    pos:
+    - 0
+    - 0
+    units: pix
+  target:
+    type: image
+    image: assets/glyphs/a.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  inner_x:
+    type: image
+    image: assets/glyphs/x.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  outer_x:
+    type: image
+    image: assets/glyphs/x.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_a:
+    type: image
+    image: assets/glyphs/a.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_b:
+    type: image
+    image: assets/glyphs/b.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_c:
+    type: image
+    image: assets/glyphs/c.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_d:
+    type: image
+    image: assets/glyphs/d.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_e:
+    type: image
+    image: assets/glyphs/e.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_f:
+    type: image
+    image: assets/glyphs/f.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_g:
+    type: image
+    image: assets/glyphs/g.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_h:
+    type: image
+    image: assets/glyphs/h.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_i:
+    type: image
+    image: assets/glyphs/i.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_j:
+    type: image
+    image: assets/glyphs/j.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_k:
+    type: image
+    image: assets/glyphs/k.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_l:
+    type: image
+    image: assets/glyphs/l.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_m:
+    type: image
+    image: assets/glyphs/m.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_n:
+    type: image
+    image: assets/glyphs/n.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_o:
+    type: image
+    image: assets/glyphs/o.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_p:
+    type: image
+    image: assets/glyphs/p.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_q:
+    type: image
+    image: assets/glyphs/q.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_r:
+    type: image
+    image: assets/glyphs/r.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_s:
+    type: image
+    image: assets/glyphs/s.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_t:
+    type: image
+    image: assets/glyphs/t.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_u:
+    type: image
+    image: assets/glyphs/u.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_v:
+    type: image
+    image: assets/glyphs/v.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_w:
+    type: image
+    image: assets/glyphs/w.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_y:
+    type: image
+    image: assets/glyphs/y.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+  glyph_z:
+    type: image
+    image: assets/glyphs/z.png
+    size:
+    - 30
+    - 75
+    pos:
+    - 0
+    - 0
+    units: pix
+triggers:
+  map:
+    experiment_start: 1
+    fixation_onset: 10
+    array_onset: 20
+    report_onset: 30
+    response: 31
+    fixation_break: 32
+    omission: 33
+    intertrial_onset: 40
+    experiment_end: 99
+  driver:
+    type: mock
+  policy:
+    strict: false
+  timing:
+    post_delay_s: 0.0

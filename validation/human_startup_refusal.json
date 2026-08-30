@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "mode": "human",
+  "window_initialized": false,
+  "error": "研究模式拒绝运行：请由实验者实际测量屏幕可见宽高和眼屏距离，并确认 measured；不得填写EDID或假定值。",
+  "limitation": "Actual human main.run with synthetic identity and mocked form collection; verified missing-calibration refusal before native window. Not a measured human startup or physical pilot."
+}

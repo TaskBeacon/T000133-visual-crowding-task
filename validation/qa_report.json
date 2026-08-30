@@ -1,0 +1,35 @@
+{
+  "status": "pass",
+  "failure_code": null,
+  "message": null,
+  "task_dir": "E:\\Taskbeacon\\T000133-visual-crowding-task",
+  "mode": "qa",
+  "seed": null,
+  "artifacts": {
+    "report_json": "E:\\Taskbeacon\\T000133-visual-crowding-task\\outputs\\qa\\qa_report.json",
+    "static_report_json": "E:\\Taskbeacon\\T000133-visual-crowding-task\\outputs\\qa\\static_report.json",
+    "contract_report_json": "E:\\Taskbeacon\\T000133-visual-crowding-task\\outputs\\qa\\contract_report.json",
+    "trace_csv": "E:\\Taskbeacon\\T000133-visual-crowding-task\\outputs\\qa\\qa_trace.csv",
+    "events_jsonl": "E:\\Taskbeacon\\T000133-visual-crowding-task\\outputs\\qa\\qa_events.jsonl"
+  },
+  "details": {
+    "config_path": "E:\\Taskbeacon\\T000133-visual-crowding-task\\config\\config_qa.yaml",
+    "static": {
+      "warnings": [],
+      "config_path": "E:\\Taskbeacon\\T000133-visual-crowding-task\\config\\config_qa.yaml",
+      "acceptance_path": null,
+      "acceptance_source": "config:qa.acceptance_criteria"
+    },
+    "trace": {
+      "errors": [],
+      "warnings": []
+    },
+    "events": {
+      "warnings": [],
+      "errors": []
+    },
+    "maturity_update": {},
+    "readme_badge_update": {}
+  },
+  "t_utc": "2026-08-30T23:10:17.265304+00:00"
+}

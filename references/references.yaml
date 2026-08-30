@@ -1,0 +1,54 @@
+task_id: T000133
+generated_at: '2026-08-30T23:00:34Z'
+selection_policy: provided_source_plus_supporting_literature
+citation_threshold: 100
+papers:
+- id: BOUMA1970
+  title: Interaction Effects in Parafoveal Letter Recognition
+  authors: []
+  year: 1970
+  journal: Nature
+  doi_or_url: https://www.nature.com/articles/226177a0
+  citation_count: 1197
+  is_high_impact: true
+  open_access: false
+  used_for:
+  - provided_foundational_bibliographic_source_only
+  parameter_bindings: {}
+  notes: User supplied foundational source. Bibliographic publisher page obtained;
+    full 1970 article not obtained. Specific historical methods traced through explicit
+    2021 reanalysis; implementation is a family adaptation.
+- id: PELLI2004
+  title: 'Crowding is unlike ordinary masking: Distinguishing feature integration
+    from detection'
+  authors: []
+  year: 2004
+  journal: Journal of Vision
+  doi_or_url: https://doi.org/10.1167/4.12.12
+  citation_count: 0
+  is_high_impact: false
+  open_access: true
+  used_for:
+  - primary_200ms_methods
+  - simultaneous_flankers
+  - center_spacing
+  parameter_bindings: {}
+  notes: Full text reviewed. Citation count not retrieved; zero is a schema sentinel,
+    not a measured citation count. Historical Bouma details in Coates2021 are secondhand.
+- id: COATES2021
+  title: 'The generality of the critical spacing for crowded optotypes: From Bouma
+    to the 21st century'
+  authors: []
+  year: 2021
+  journal: Journal of Vision
+  doi_or_url: https://doi.org/10.1167/jov.21.11.18
+  citation_count: 0
+  is_high_impact: false
+  open_access: true
+  used_for:
+  - primary_constant_stimuli
+  - explicit_historical_reanalysis
+  - threshold_limitations
+  parameter_bindings: {}
+  notes: Full text reviewed. Citation count not retrieved; zero is a schema sentinel,
+    not a measured citation count. Historical Bouma details in Coates2021 are secondhand.

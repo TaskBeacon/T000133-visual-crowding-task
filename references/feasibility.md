@@ -1,0 +1,11 @@
+# Source and feasibility decision
+
+Decision: proceed with a fail-closed research implementation and separate synthetic validation. The task's requirement to supply screen dimensions, viewing distance and fixation instructions can be implemented without pretending that this agent measured a physical display. The stricter subpixel certification of candidate141 does not apply to this coarse letter task.
+
+Research measurements must be supplied by an experimenter using a ruler/tape for the active visible display and eye-to-screen distance, with date/method and explicit acknowledgement. Neither EDID nor CSS viewport nor devicePixelRatio measures centimeters. Native fullscreen framebuffer size and web fullscreen CSS size are only coordinate extents. Changes to dimensions/zoom/DPR invalidate the calibration. Absence or implausibility of inputs refuses startup. Viewport-size ratios, glyph pixel sampling and overlap/clipping are checked independently.
+
+No physical calibration or human psychophysics pilot has been performed. Synthetic diagnostics test projection/response/data plumbing and actual visible software rendering. They cannot establish actual visual angles, fixation, individual critical spacing, photometric properties, display latency or clinical validity. Measured input accuracy and a stable perpendicular centered viewing position remain operator responsibilities.
+
+Source access: Nature provided bibliographic/abstract material but not full Bouma1970 text; PDF redirected to subscription page. Institutional Bouma collection request returned403. A linked LetterLetter mirror could not be fetched and its HTTPS certificate was expired; certificate validation was not bypassed. Obtained full Pelli2004 primary author-hosted PDF and Coates2021 institutional open-access paper. The historical Bouma method is labeled secondhand reconstruction; the implementable task belongs to the source-supported family. Citations and exact adaptations appear in the audit and mappings.
+
+Primary accessible methods: https://people.cas.sc.edu/palomare/about_me_files/palomares_jov_2004.pdf ; https://escholarship.org/content/qt2b3078bp/qt2b3078bp.pdf . Foundational provided source: https://www.nature.com/articles/226177a0 .

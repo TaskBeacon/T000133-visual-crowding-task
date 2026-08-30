@@ -1,0 +1,25 @@
+{
+  "id": "BOUMA1970",
+  "title": "Interaction Effects in Parafoveal Letter Recognition",
+  "authors": [],
+  "year": 1970,
+  "journal": "Nature",
+  "doi_or_url": "https://www.nature.com/articles/226177a0",
+  "citation_count": 0,
+  "is_high_impact": false,
+  "open_access": false,
+  "used_for": [
+    "primary_protocol_source",
+    "task_workflow",
+    "stimulus_specification",
+    "timing_parameters"
+  ],
+  "parameter_bindings": {},
+  "notes": "User supplied foundational source. Bibliographic publisher page obtained; full 1970 article not obtained. Specific historical methods traced through explicit 2021 reanalysis; implementation is a family adaptation.",
+  "source_kind": "url",
+  "source_locator": "https://www.nature.com/articles/226177a0",
+  "attachments": {
+    "paper_pdf": null,
+    "methods_path": null
+  }
+}

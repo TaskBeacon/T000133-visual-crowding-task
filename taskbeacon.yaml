@@ -1,0 +1,22 @@
+id: T000133
+slug: visual-crowding-task
+title: Visual Crowding Task
+acquisition: behavior
+variant: baseline
+license: MIT
+language: Chinese
+canonical: true
+cognitive_domain: [visual-perception, spatial-crowding]
+maturity: smoke_tested
+version:
+  release_tag: v0.1.0
+contracts:
+  taps: v0.2.0
+runtime:
+  profile: psyflow
+  entrypoint: main.py
+evidence:
+- https://doi.org/10.1038/226177a0
+- https://doi.org/10.1167/4.12.12
+- https://doi.org/10.1167/jov.21.11.18
+maintainer: [TaskBeacon]

@@ -1,0 +1,11 @@
+test_asymmetric_projection_and_independent_axes (test_geometry_protocol.GeometryProtocolTests) ... ok
+test_bad_calibration_rejected (test_geometry_protocol.GeometryProtocolTests) ... ok
+test_diagnostic_all_twenty_spatial_cells (test_geometry_protocol.GeometryProtocolTests) ... ok
+test_full_factorial_and_seed (test_geometry_protocol.GeometryProtocolTests) ... ok
+test_projection_inverse_and_vertical_angle (test_geometry_protocol.GeometryProtocolTests) ... ok
+test_score_distinguishes_error_omission_and_gaze (test_geometry_protocol.GeometryProtocolTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.314s
+
+OK

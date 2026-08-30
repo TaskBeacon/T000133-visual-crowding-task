@@ -1,0 +1,21 @@
+[taps-validate] task=E:\Taskbeacon\T000133-visual-crowding-task contracts=v0.2.0
++ [PASS] taskbeacon
++ [PASS] required_files
++ [PASS] gitignore
++ [PASS] config_base
++ [PASS] config_qa
++ [PASS] config_scripted_sim
++ [PASS] config_sampler_sim
++ [PASS] responder_plugin
++ [PASS] runtime_main
++ [PASS] responder_context
++ [PASS] readme_meta
+! [WARN] changelog
+  - WARN: Missing recommended changelog section: Changed
+  - WARN: Missing recommended changelog section: Fixed
++ [PASS] reference_artifacts
+! [WARN] artifacts
+  - WARN: outputs/qa not found; QA artifact checks skipped.
+  - WARN: outputs/sim not found; sim artifact checks skipped.
+  suggestion: Run representative QA/sim sessions so artifact conventions are exercised.
+[taps-validate] summary: PASS=12 WARN=2 FAIL=0
